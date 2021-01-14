@@ -17,16 +17,18 @@
             </router-link>
         </div>
 
-        <div class="p-4 leading-relaxed">
-            <slot name="description">
+        <div class="h-full flex flex-col justify-between">
+            <div class="p-4 leading-relaxed">
+                <slot name="description">
 
-            </slot>
-        </div>
+                </slot>
+            </div>
 
-        <div class="flex justify-center mb-4">
-            <router-link :to="to" class="transition ease-in-out duration-300 bg-blue-500 hover:bg-blue-600 text-white text-xs rounded-sm shadow-md px-4 py-2">
-                Read More
-            </router-link>
+            <div class="flex justify-center mb-4">
+                <router-link :to="to" class="transition ease-in-out duration-300 bg-blue-500 hover:bg-blue-600 text-white text-xs rounded-sm shadow-md px-4 py-2">
+                    Read More
+                </router-link>
+            </div>
         </div>
     </div>
 </template>
@@ -40,7 +42,7 @@
             },
             useImage: {
                 type: Boolean,
-                default: true,
+                default: false,
             },
             fallbackImage: {
                 type: Number,

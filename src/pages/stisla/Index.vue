@@ -10,46 +10,49 @@
         </div>
 
         <!-- # Articles -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-6">
-            <Article-1 :useImage="false">
-                <template #title>
-                    Excepteur sint occaecat cupidatat non proident
-                </template>
-                <template #description>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </template>
-            </Article-1>
-            
-            <Article-1 :useImage="false" :fallbackImage="1">
-                <template #title>
-                    Excepteur sint occaecat cupidatat non proident
-                </template>
-                <template #description>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </template>
-            </Article-1>
-            
-            <Article-1 :useImage="false" :fallbackImage="3">
-                <template #title>
-                    Excepteur sint occaecat cupidatat non proident
-                </template>
-                <template #description>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </template>
-            </Article-1>
-            
-            <Article-1 :useImage="true">
-                <template #image>
-                    <img class="object-cover" src="./../../assets/chris-rosiak-gpp9Wyw15ck-unsplash.jpg" alt="Beautiful image by Chris Rosiak from Unsplash" />
-                </template>
-                <template #title>
-                    Excepteur sint occaecat cupidatat non proident
-                </template>
-                <template #description>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                </template>
-            </Article-1>
-        </div>
+        <section class="mb-6">
+            <h4 class="text-2xl mb-4">Article Style 1</h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-6">
+                <Article-1>
+                    <template #title>
+                        An example title
+                    </template>
+                    <template #description>
+                        This article has a very short description with default no image or link.
+                    </template>
+                </Article-1>
+                
+                <Article-1 :fallbackImage="1">
+                    <template #title>
+                        Or a headline if you prefer to call it
+                    </template>
+                    <template #description>
+                        This article has an alternative image color.
+                    </template>
+                </Article-1>
+                
+                <Article-1 :fallbackImage="3" :to="'../'">
+                    <template #title>
+                        An article with link to another page
+                    </template>
+                    <template #description>
+                        This article has another image color (it's ranging from 1-7), also this article is the longest one. Notice how the button stays on the bottom of the card.
+                    </template>
+                </Article-1>
+                
+                <Article-1 :useImage="true" :to="'../'">
+                    <template #image>
+                        <img class="object-cover" src="./../../assets/chris-rosiak-gpp9Wyw15ck-unsplash.jpg" alt="Beautiful image by Chris Rosiak from Unsplash" />
+                    </template>
+                    <template #title>
+                        An article with an image
+                    </template>
+                    <template #description>
+                        Other than that, it is also linked to another page.
+                    </template>
+                </Article-1>
+            </div>
+        </section>
         
     </div>
 </template>
