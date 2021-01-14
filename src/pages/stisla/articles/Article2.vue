@@ -8,7 +8,7 @@
                 <div v-else :class="getFallbackImageColor" class="w-full h-full"></div>
             </div>
 
-            <div v-if="trending" class="absolute flex items-center bottom-0 m-4 bg-red-500 text-xs px-4 py-2 rounded-3xl text-white">
+            <div v-if="trending" class="absolute flex items-center bottom-0 m-4 bg-red-700 font-bold text-xs px-4 py-2 rounded-3xl text-white">
                 <svg class="w-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
                     <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->
                     <path d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"/>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="flex px-4 mt-4 mb-2">
-            <router-link :to="to" class="line-clamp-2 inline-block text-base leading-relaxed tracking-wide font-semibold text-purple-500">
+            <router-link :to="to" class="line-clamp-2 inline-block text-base leading-relaxed tracking-wide font-semibold text-purple-600">
                 <slot name="title">
 
                 </slot>
@@ -35,9 +35,12 @@
             </div>
 
             <div class="flex justify-end mb-2">
-                <router-link :to="to" class="flex items-center text-blue-500 hover:underline text-sm px-4 py-2">
-                    <span class="mr-2">
-                        Read More
+                <router-link :to="to" class="flex items-center text-blue-600 hover:underline text-sm px-4 py-2">
+                    <span class="mr-1">
+                        Read
+                    </span>
+                    <span class="w-40 inline-block truncate mr-2">
+                        <slot name="title"></slot>
                     </span>
                     <svg class="w-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
                         <!-- Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) -->

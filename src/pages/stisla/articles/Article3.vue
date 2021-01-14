@@ -17,7 +17,7 @@
                 <span>5 Days</span>
             </p>
             
-            <router-link :to="to" class="line-clamp-2 inline-block text-base leading-relaxed tracking-wide font-semibold text-purple-500">
+            <router-link :to="to" class="line-clamp-2 inline-block text-base leading-relaxed tracking-wide font-semibold text-purple-600">
                 <slot name="title">
 
                 </slot>
@@ -40,7 +40,7 @@
                 </div>
                 
                 <div class="flex flex-col">
-                    <router-link :to="writerProfile" class="block hover:underline text-blue-500 font-bold mb-1">
+                    <router-link :to="writerProfile" class="block hover:underline text-blue-600 font-bold mb-1">
                         <slot name="user">
 
                         </slot>
