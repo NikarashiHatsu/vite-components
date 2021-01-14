@@ -4,7 +4,7 @@
         <!-- Navigation -->
         <div class="flex flex-col my-6">
             <div class="flex justify-between">
-                <router-link :to="'../'">Back</router-link>
+                <router-link to="/">Back</router-link>
                 <span>Stisla Components</span>
             </div>
         </div>

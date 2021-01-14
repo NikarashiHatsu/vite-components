@@ -4,7 +4,7 @@
         <!-- Navigation -->
         <div class="flex flex-col my-6">
             <div class="flex justify-between">
-                <router-link :to="'../'">Back</router-link>
+                <router-link to="/stisla">Back</router-link>
                 <span>Stisla Components</span>
             </div>
         </div>
@@ -31,7 +31,7 @@
                     </template>
                 </Article-1>
                 
-                <Article-1 :fallbackImage="3" :to="'../'">
+                <Article-1 :fallbackImage="3" to="/stisla">
                     <template #title>
                         An article with link to another page
                     </template>
@@ -40,7 +40,7 @@
                     </template>
                 </Article-1>
                 
-                <Article-1 :useImage="true" :to="'../'">
+                <Article-1 :useImage="true" to="/stisla">
                     <template #image>
                         <img class="object-cover" src="./../../../assets/chris-rosiak-gpp9Wyw15ck-unsplash.jpg" alt="Beautiful image by Chris Rosiak from Unsplash" />
                     </template>
@@ -75,7 +75,7 @@
                     </template>
                 </Article-2>
                 
-                <Article-2 :fallbackImage="4" :to="'../'">
+                <Article-2 :fallbackImage="4" to="/stisla">
                     <template #title>
                         An article with link to another page
                     </template>
@@ -84,7 +84,7 @@
                     </template>
                 </Article-2>
                 
-                <Article-2 :useImage="true" :to="'../'">
+                <Article-2 :useImage="true" :to="'/stisla'">
                     <template #image>
                         <img class="object-cover" src="./../../../assets/chris-rosiak-gpp9Wyw15ck-unsplash.jpg" alt="Beautiful image by Chris Rosiak from Unsplash" />
                     </template>
@@ -131,7 +131,7 @@
                     </template>
                 </Article-3>
                 
-                <Article-3 :useImage="true" :to="'../'">
+                <Article-3 :useImage="true" to="/stisla">
                     <template #image>
                         <img class="object-cover" src="./../../../assets/chris-rosiak-gpp9Wyw15ck-unsplash.jpg" alt="Beautiful image by Chris Rosiak from Unsplash" />
                     </template>
