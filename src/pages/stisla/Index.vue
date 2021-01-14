@@ -59,7 +59,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-6">
                 <Article-2 :trending="true">
                     <template #title>
-                        This title is so long so it's truncated aaaaaaaaa
+                        This title is so long so it's truncated aaaaaaaaaaaaaaaaaa
                     </template>
                     <template #description>
                         This article has a very short description with default no image or link. By the way, it is featured!
