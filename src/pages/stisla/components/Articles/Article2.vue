@@ -20,7 +20,7 @@
         </div>
 
         <div class="flex px-4 mt-4 mb-2">
-            <router-link :to="to" class="line-clamp-2 inline-block text-base tracking-wide font-bold text-purple-500">
+            <router-link :to="to" class="line-clamp-2 inline-block text-base leading-relaxed tracking-wide font-semibold text-purple-500">
                 <slot name="title">
 
                 </slot>
@@ -28,7 +28,7 @@
         </div>
 
         <div class="h-full flex flex-col justify-between">
-            <div class="px-4 leading-relaxed mb-4">
+            <div class="px-4 leading-loose mb-4">
                 <slot name="description">
 
                 </slot>

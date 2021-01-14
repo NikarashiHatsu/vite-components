@@ -10,7 +10,7 @@
 
             <div class="absolute bottom-0 w-full h-1/2 opacity-40 bg-gradient-to-t from-gray-900 bg-opacity-10"></div>
 
-            <router-link :to="to" class="absolute bottom-0 p-4 tracking-wide font-bold text-white">
+            <router-link :to="to" class="absolute bottom-0 p-4 text-base leading-relaxed tracking-wide font-bold text-white">
                 <slot name="title">
 
                 </slot>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="h-full flex flex-col justify-between">
-            <div class="p-4 leading-relaxed">
+            <div class="p-4 leading-loose">
                 <slot name="description">
 
                 </slot>
