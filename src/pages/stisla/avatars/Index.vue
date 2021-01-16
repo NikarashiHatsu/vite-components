@@ -142,16 +142,49 @@
                 </AvatarPresence>
             </div>
         </section>
+
+        <section class="mb-8">
+            <h4 class="text-2xl mb-4">Avatar Initial</h4>
+            <div class="flex items-center">
+                <AvatarInitial :size="'xl'" :color="16">
+                    <template #initial>
+                        UM
+                    </template>
+                </AvatarInitial>
+                <AvatarInitial class="ml-2" :size="'lg'" :color="17">
+                    <template #initial>
+                        UM
+                    </template>
+                </AvatarInitial>
+                <AvatarInitial class="ml-2">
+                    <template #initial>
+                        UM
+                    </template>
+                </AvatarInitial>
+                <AvatarInitial class="ml-2" :size="'sm'" :color="1">
+                    <template #initial>
+                        UM
+                    </template>
+                </AvatarInitial>
+                <AvatarInitial class="ml-2" :size="'xs'" :color="2">
+                    <template #initial>
+                        UM
+                    </template>
+                </AvatarInitial>
+            </div>
+        </section>
     </div>
 </template>
 
 <script>
+    import AvatarInitial from './AvatarInitial.vue';
     import AvatarPresence from './AvatarPresence.vue';
     import BadgedAvatar from './BadgedAvatar.vue';
     import PlainAvatar from './PlainAvatar.vue';
 
     export default {
         components: {
+            AvatarInitial,
             AvatarPresence,
             BadgedAvatar,
             PlainAvatar,
