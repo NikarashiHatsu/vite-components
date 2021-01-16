@@ -20,6 +20,11 @@
                         Articles
                     </router-link>
                 </li>
+                <li>
+                    <router-link to="/stisla/avatars">
+                        Avatars
+                    </router-link>
+                </li>
             </ol>
         </div>
     </div>
