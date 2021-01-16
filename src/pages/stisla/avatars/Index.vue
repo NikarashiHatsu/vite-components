@@ -7,6 +7,9 @@
                 <router-link to="/stisla">Back</router-link>
                 <span>Stisla Components</span>
             </div>
+            <p class="mt-2">
+                <b>TODO: Make avatar customisable using Image</b>
+            </p>
         </div>
 
         <!-- # Avatars -->
