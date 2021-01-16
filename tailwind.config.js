@@ -19,6 +19,10 @@ module.exports = {
         violet: colors.violet,
         fuchsia: colors.fuchsia,
         rose: colors.rose,
+      },
+      fontSize: {
+        'xxxs': '0.25rem',
+        'xxs': '0.5rem'
       }
     },
   },
