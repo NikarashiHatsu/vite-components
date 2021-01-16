@@ -9,7 +9,16 @@ module.exports = {
         'sans': ['Nunito']
       },
       colors: {
-        orange: colors.orange
+        orange: colors.orange,
+        amber: colors.amber,
+        lime: colors.lime,
+        emerald: colors.emerald,
+        teal: colors.teal,
+        cyan: colors.cyan,
+        lightBlue: colors.lightBlue,
+        violet: colors.violet,
+        fuchsia: colors.fuchsia,
+        rose: colors.rose,
       }
     },
   },
